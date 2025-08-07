@@ -1,0 +1,36 @@
+# oxygen_ladang
+
+**oxygen_ladang** adalah skrip ladang interaktif untuk _FiveM QBCore Framework_, memungkinkan pemain mengambil tanaman seperti **ganja (weed)** dan **kokain (cocaine)** dari lokasi yang telah ditentukan di map. Sistem ini dilengkapi dengan anti-exploit, sistem prop dinamis, serta integrasi dengan `ox_target` dan `ox_lib`.
+
+---
+
+## 📦 Fitur
+
+- ✅ Interaksi dengan tanaman menggunakan `ox_target`
+- 🔄 Respawn otomatis prop ketika jumlahnya sedikit
+- 🧠 Skill check sebelum bisa mengambil tanaman
+- 🧼 Otomatis hapus prop ketika pemain menjauh
+- 🚔 Cek jumlah polisi online sebelum memperbolehkan farming
+- 🛡️ Perlindungan anti-exploit untuk mencegah abuse event dari luar zona
+
+---
+
+## 🗺️ Lokasi Ladang
+
+Didefinisikan dalam `config.lua` melalui `Config.CircleZones`:
+
+| Nama Zona | Koordinat                 | Objek Prop                  | Item yang Diberikan  |
+| --------- | ------------------------- | --------------------------- | -------------------- |
+| WeedField | `294.19, 4302.28, 45.29`  | `prop_weed_02`              | `weedplant_branch`   |
+| CokeField | `2272.58, 4963.41, 41.53` | `bkr_prop_coke_tablepowder` | `cocainplant_cocain` |
+
+---
+
+## ⚙️ Instalasi
+
+1. **Salin folder** `oxygen_ladang` ke dalam folder `resources/[qb]`.
+2. Tambahkan ke `server.cfg`:
+
+   ```cfg
+   ensure oxygen_ladang
+   ```
